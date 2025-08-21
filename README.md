@@ -1,5 +1,9 @@
 ## Cost Explorer — Zabbix Module (7.0)
 
+
+<img width="1735" height="944" alt="image" src="https://github.com/user-attachments/assets/25644d2d-2f82-4233-b9af-6a95d2cdf090" />
+
+
 A Zabbix frontend module that provides a "Monitoring → Cost Explorer" page to estimate host cost based on CPU cores and memory size, with optional usage-aware breakdowns. Developed and tested with Zabbix 7.0.
 
 ## Requirements
