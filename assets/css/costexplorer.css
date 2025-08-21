@@ -1,0 +1,508 @@
+/* Cost Explorer Zabbix-Compatible Styles */
+
+.pricing-info-panel {
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    background: #f8f9fa;
+}
+
+.pricing-info-panel h4 {
+    margin: 0 0 10px 0;
+    color: #495057;
+    font-size: 16px;
+}
+
+/* Mini Usage Bars for Table Cells */
+.usage-bar-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 120px;
+}
+
+.mini-usage-bar {
+    width: 60px;
+    height: 12px;
+    background: #e9ecef;
+    
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #dee2e6;
+}
+
+.mini-bar-used {
+    height: 100%;
+    background: linear-gradient(90deg, #28a745 0%, #20c997 100%);
+    
+    transition: all 0.2s ease;
+    min-width: 2px;
+}
+
+.mini-usage-bar:hover .mini-bar-used {
+    filter: brightness(1.1);
+}
+
+.summary-bar {
+    width: 100px;
+    height: 16px;
+}
+
+.summary-bar .mini-bar-used {
+    height: 100%;
+}
+
+.usage-bar-cell span {
+    font-size: 12px;
+    color: #495057;
+    font-weight: 500;
+}
+
+/* Cost Breakdown Cells */
+.cost-breakdown-cell {
+    min-width: 140px;
+}
+
+.cost-breakdown-cell > div:first-child {
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 2px;
+}
+
+.cost-breakdown-cell > div:last-child {
+    font-size: 11px;
+    color: #6c757d;
+}
+
+.cost-used-small {
+    color: #28a745;
+    font-weight: 500;
+}
+
+.cost-idle-small {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.total-cost-main {
+    font-weight: 700;
+    color: #007bff;
+    font-size: 14px;
+}
+
+/* Status Indicators */
+.host-active {
+    color: #28a745;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.host-inactive {
+    color: #6c757d;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Process List Compact */
+.processes-compact {
+    max-width: 200px;
+    font-size: 12px;
+    color: #495057;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Summary Table Styling */
+.cost-used {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.cost-idle {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.cost-total {
+    color: #007bff;
+    font-weight: 700;
+}
+
+.cost-total-monthly {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Standard Zabbix Table Styling */
+.cost-explorer-table {
+    margin-top: 20px;
+}
+
+.cost-explorer-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+    padding: 12px 8px;
+}
+
+.cost-explorer-table td {
+    vertical-align: middle;
+    padding: 8px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cost-explorer-table .grey {
+    color: #6c757d;
+}
+
+.cost-explorer-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Summary Section */
+.cost-explorer-summary {
+    margin-top: 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    
+}
+
+.cost-explorer-summary th {
+    background-color: #e9ecef;
+    font-weight: 600;
+}
+
+.cost-explorer-summary .bold {
+    font-weight: 700;
+}
+
+.no-hosts-message {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+    font-size: 16px;
+    background: #f8f9fa;
+    
+    border: 1px solid #dee2e6;
+}
+
+/* Modal Dialog Centering - Specific to CostExplorer Pricing Modal */
+.overlay-dialogue.costexplorer-pricing-modal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.overlay-dialogue.costexplorer-pricing-modal .dialogue-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+#pricing-form {
+    padding: 20px;
+}
+
+#pricing-form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    align-items: center;
+}
+
+#pricing-form label {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#pricing-form input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    
+    font-size: 14px;
+}
+
+#pricing-form input[type="number"]:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.filter-space {
+    margin-bottom: 20px;
+}
+
+.host-status-monitored {
+    color: #28a745;
+}
+
+.host-status-not-monitored {
+    color: #6c757d;
+}
+
+.item-keys-info {
+    font-size: 12px;
+    color: #6c757d;
+    cursor: help;
+    white-space: nowrap;
+}
+
+/* Potential Savings Styles - Zabbix compatible */
+.savings-cell {
+    padding: 4px 8px;
+    vertical-align: middle;
+}
+
+.savings-main {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.savings-breakdown {
+    font-size: 10px;
+    color: #768d87;
+    line-height: 1.1;
+    margin-top: 2px;
+}
+
+.savings-percentage {
+    font-weight: 500;
+}
+
+.savings-hourly {
+    color: #999;
+}
+
+/* Subtle color coding using standard Zabbix colors */
+.savings-high .savings-main {
+    color: #c73838; /* Zabbix red for high priority */
+}
+
+.savings-medium .savings-main {
+    color: #ff8c00; /* Zabbix orange for average priority */
+}
+
+.savings-low .savings-main {
+    color: #cc9900; /* Zabbix yellow for low priority */
+}
+
+.savings-minimal .savings-main {
+    color: #59db8f; /* Zabbix green for ok status */
+}
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .usage-bar-cell {
+        min-width: 100px;
+        gap: 6px;
+    }
+    
+    .mini-usage-bar {
+        width: 50px;
+        height: 10px;
+    }
+    
+    .cost-breakdown-cell {
+        min-width: 120px;
+    }
+    
+    .processes-compact {
+        max-width: 150px;
+        font-size: 11px;
+    }
+    
+    .cost-explorer-table {
+        font-size: 12px;
+    }
+    
+    .cost-explorer-table th,
+    .cost-explorer-table td {
+        padding: 6px 4px;
+    }
+    
+    .pricing-info-panel {
+        padding: 10px;
+    }
+    
+    #pricing-form .form-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .usage-bar-cell {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        min-width: 80px;
+    }
+    
+    .mini-usage-bar {
+        width: 40px;
+        height: 8px;
+    }
+    
+    .usage-bar-cell span {
+        font-size: 11px;
+    }
+    
+    .cost-breakdown-cell {
+        min-width: 100px;
+    }
+    
+    .processes-compact {
+        max-width: 120px;
+        font-size: 10px;
+    }
+}
+
+
+/* Dark theme support */
+[theme="dark-theme"] .pricing-info-panel {
+    background: #2b2b2b;
+    border-color: #495057;
+    color: #f8f9fa;
+}
+
+[theme="dark-theme"] .pricing-info-panel h4 {
+    color: #f8f9fa;
+}
+
+[theme="dark-theme"] .mini-usage-bar {
+    background: #4b5563;
+    border-color: #6b7280;
+}
+
+[theme="dark-theme"] .mini-bar-used {
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+}
+
+[theme="dark-theme"] .usage-bar-cell span {
+    color: #d1d5db;
+}
+
+[theme="dark-theme"] .cost-breakdown-cell > div:first-child {
+    color: #f9fafb;
+}
+
+[theme="dark-theme"] .cost-breakdown-cell > div:last-child {
+    color: #9ca3af;
+}
+
+[theme="dark-theme"] .total-cost-main {
+    color: #60a5fa;
+}
+
+[theme="dark-theme"] .processes-compact {
+    color: #d1d5db;
+}
+
+[theme="dark-theme"] .cost-used {
+    color: #10b981;
+}
+
+[theme="dark-theme"] .cost-idle {
+    color: #f87171;
+}
+
+[theme="dark-theme"] .cost-total {
+    color: #60a5fa;
+}
+
+
+[theme="dark-theme"] .cost-explorer-table {
+    background: #374151;
+}
+
+[theme="dark-theme"] .cost-explorer-table th {
+    background-color: #4b5563;
+    color: #f9fafb;
+    border-color: #6b7280;
+}
+
+[theme="dark-theme"] .cost-explorer-table td {
+    border-color: #4b5563;
+    color: #f9fafb;
+}
+
+[theme="dark-theme"] .cost-explorer-table tbody tr:hover {
+    background-color: #4b5563;
+}
+
+[theme="dark-theme"] .cost-explorer-summary {
+    background: #374151;
+    border-color: #6b7280;
+    color: #f9fafb;
+}
+
+[theme="dark-theme"] .cost-explorer-summary th {
+    background-color: #4b5563;
+    color: #f9fafb;
+}
+
+[theme="dark-theme"] .no-hosts-message {
+    background: #374151;
+    color: #d1d5db;
+    border-color: #6b7280;
+}
+
+[theme="dark-theme"] #pricing-form {
+    background: #2b2b2b;
+    color: #ffffff;
+}
+
+[theme="dark-theme"] #pricing-form input[type="number"] {
+    background: #2b2b2b;
+    border-color: #6c757d;
+    color: #ffffff;
+}
+
+[theme="dark-theme"] #pricing-form input[type="number"]:focus {
+    background: #2b3035;
+}
+
+/* Dark theme modal support - Specific to CostExplorer Pricing Modal */
+[theme="dark-theme"] .overlay-dialogue.costexplorer-pricing-modal {
+    background: #2b2b2b;
+    border: 1px solid #6c757d;
+    color: #ffffff;
+}
+
+[theme="dark-theme"] .overlay-dialogue.costexplorer-pricing-modal .dialogue-body {
+    background: #2b2b2b;
+    color: #ffffff;
+}
+
+/* Responsive modal adjustments - Specific to CostExplorer Pricing Modal */
+@media (max-width: 768px) {
+    .overlay-dialogue.costexplorer-pricing-modal {
+        width: 95vw !important;
+        max-width: 95vw !important;
+        max-height: 95vh;
+    }
+    
+    .overlay-dialogue.costexplorer-pricing-modal .dialogue-body {
+        max-height: 75vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-dialogue.costexplorer-pricing-modal {
+        width: 98vw !important;
+        max-width: 98vw !important;
+        top: 5% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        position: fixed !important;
+    }
+}

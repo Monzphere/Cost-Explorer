@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2.0,
+    "id": "costexplorer",
+    "name": "Cost Explorer",
+    "author": "MonZphere",
+    "url": "https://monzphere.com",
+    "version": "1.0",
+    "namespace": "CostExplorer",
+    "description": "Cost Explorer",
+    "actions": {
+        "costexplorer.view": {
+            "class": "CControllerCostExplorerView",
+            "view": "costexplorer.view",
+            "layout": "layout.htmlpage"
+        },
+        "costexplorer.view.refresh": {
+            "class": "CControllerCostExplorerViewRefresh",
+            "view": "costexplorer.view.refresh",
+            "layout": null
+        },
+        "costexplorer.pricing.update": {
+            "class": "CControllerCostExplorerPricingUpdate"
+        }
+    },
+    "assets": {
+        "css": [ "costexplorer.css" ]
+    }
+} 
