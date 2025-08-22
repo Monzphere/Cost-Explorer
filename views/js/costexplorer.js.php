@@ -23,7 +23,8 @@ function openPricingConfigDialog() {
             {
                 "title": "<?= _('Cancel') ?>",
                 "class": "btn-alt",
-                "cancel": true
+                "cancel": true,
+                "action": "overlayDialogueDestroy(this);"
             }
         ]
     }, this);
